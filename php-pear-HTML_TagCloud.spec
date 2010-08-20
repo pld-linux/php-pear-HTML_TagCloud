@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - generate a "tag cloud" in HTML
 Summary(pl.UTF-8):	%{_pearname} - generowanie "chmury tagów" w HTML
 Name:		php-pear-%{_pearname}
-Version:	0.2.3
+Version:	0.2.4
 Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	e0aaca38d8bfe21eee160093baf76dfb
+# Source0-md5:	03644cb805cb3ba48fea52755a1b0744
 URL:		http://pear.php.net/package/HTML_TagCloud/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -34,8 +34,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
