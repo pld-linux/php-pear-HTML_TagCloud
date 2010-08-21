@@ -1,13 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		HTML
-%define		_subclass	TagCloud
 %define		_status		beta
 %define		_pearname	HTML_TagCloud
 Summary:	%{_pearname} - generate a "tag cloud" in HTML
 Summary(pl.UTF-8):	%{_pearname} - generowanie "chmury tagów" w HTML
 Name:		php-pear-%{_pearname}
 Version:	0.2.4
-Release:	1
+Release:	2
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,9 +13,14 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/HTML_TagCloud/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-date
 Requires:	php-pear
+Suggests:	php-pear-Image_Color
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# exclude optional dependencies
+%define		_noautoreq	pear(Image/Color.*)
 
 %description
 HTML_TagCloud enables you to generate a "tag cloud" in HTML.
