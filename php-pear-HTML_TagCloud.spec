@@ -1,15 +1,15 @@
-%include	/usr/lib/rpm/macros.php
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	HTML_TagCloud
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - generate a "tag cloud" in HTML
 Summary(pl.UTF-8):	%{_pearname} - generowanie "chmury tagów" w HTML
 Name:		php-pear-%{_pearname}
-Version:	0.2.4
-Release:	3
+Version:	1.0.0
+Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	03644cb805cb3ba48fea52755a1b0744
+# Source0-md5:	38285f0c18a8b53995c38428778f3548
 URL:		http://pear.php.net/package/HTML_TagCloud/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
