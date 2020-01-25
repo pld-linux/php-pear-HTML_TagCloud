@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	HTML_TagCloud
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - generate a "tag cloud" in HTML
 Summary(pl.UTF-8):	%{_pearname} - generowanie "chmury tagów" w HTML
 Name:		php-pear-%{_pearname}
